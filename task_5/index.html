@@ -1,0 +1,16 @@
+<body>
+   <link rel="stylesheet" href="style.css">
+   <h1>Todo app</h1>
+   <input type="text" id="taskInput" placeholder="Enter task">
+   <input type="date" id="dateInput">
+   <button id="addBtn">Add task</button>
+
+   <div class="filters">
+      <button onclick="setFilter('all')">All</button>
+      <button onclick="setFilter('pending')">Pending</button>
+      <button onclick="setFilter('completed')">Completed</button>
+   </div>
+
+   <ul id="todoList"></ul>
+   <script src="script.js"></script>
+</body>

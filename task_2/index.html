@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal blog about technology and learning">
+    <meta name="keywords" content="blog, technology, learning, HTML, CSS">
+    <meta name="author" content="Vikas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Blog</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>My <span class="highlight">Blog</span></h1>
+    <p>Sharing knowledge and ideas</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <section class="content">
+        <article>
+            <h2>My First Blog Post</h2>
+            <p class="date">Published on 18 Jan 2026</p>
+            <p>
+                This is my first blog post created using 
+                <span class="highlight">HTML5</span> and 
+                <span class="highlight">CSS</span>.
+                Web development is fun and creative.
+            </p>
+        </article>
+
+        <div id="disqus_thread"></div>
+    </section>
+
+    <aside>
+        <h3>About Me</h3>
+        <p>I am a web development learner.</p>
+    </aside>
+</div>
+
+<footer>
+    <p>© 2026 My Blog | All Rights Reserved</p>
+</footer>
+
+Disqus Script
+<script>
+var disqus_config = function () {
+this.page.url = window.location.href;
+this.page.identifier = "blog-home";
+};
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://YOUR-DISQUS-SHORTNAME.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+</body>
+</html>
