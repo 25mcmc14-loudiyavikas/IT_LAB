@@ -1,0 +1,11 @@
+body{
+   background-color: antiquewhite;
+
+}
+.content{
+   margin: 40%;
+   padding: 10px;
+   border: 1px;
+   width: 50%;
+   container-type: grid;
+}
